@@ -1,20 +1,13 @@
-# canalia color preset for iTerm2
+# canalia theme for [iTerm2](https://iterm2.com/)
 
-[iTerm2 - macOS Terminal Replacement](https://iterm2.com/) のカラープリセットです。
+## Usage
 
-## 設定方法
+- Select `iTerm2` > `Preferences…` > `Profiles` > `Colors`
+- Select `Color Presets…` > `Import…`
+- Select `canalia-dark.itermcolors` or `canalia-light.itermcolors`
+- Select `+` or `Other Actions…` > `Duplicate Profile` to make a new profile
+- Select `Color Presets…` > `canalia-dark` or `canalia-light`
 
-- iTerm2 > Preferences… > Profiles > Colors を選択
-- Color Presets… > Import… を選択
-- canalia dark.itermcolors または canalia light.itermcolors を選択
-- プロファイルリストの下部の + または Other Actions… > Duplicate Profile を選択して新しいプロファイルを作成しプロファイル名などを決める
-- Color Presets… > canalia dark または canalia light を選択
-- 必要に応じて Other Actions… > Set as Default を選択してデフォルトに設定
+## License
 
-### 追加の設定例
-
-- Window
-    - Window Appearance の Transparency を Opaque (スライダーを左端) に
-- Keys
-    - Left Option (⌥) Key: Esc+
-    - Right Option (⌥) Key: Esc+
+MIT
