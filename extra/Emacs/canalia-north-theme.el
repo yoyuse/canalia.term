@@ -1,4 +1,4 @@
-;;; canalia-theme.el --- canalia theme for Emacs
+;;; canalia-north-theme.el --- canalia north theme for Emacs
 
 ;; Copyright (C) 2021  YUSE Yosihiro
 
@@ -20,34 +20,36 @@
 
 ;;; Commentary:
 
+;; 2021-04-28 canalia-north-theme.el from ngf-theme.el
+;; 2021-04-21 ngf-theme.el from canalia-theme.el
 ;; 2021-04-15 canalia-theme.el from canalia-f-theme.el
 ;; 2021-04-04
 
 ;;; Code:
 
-(defvar canalia-light-color-palette nil)
-(defvar canalia-dark-color-palette nil)
-(defvar canalia-definition nil)
+(defvar canalia-north-day-color-palette nil)
+(defvar canalia-north-night-color-palette nil)
+(defvar canalia-north-definition nil)
 
-(setq canalia-light-color-palette
-      '((theme-name 'canalia-light)
+(setq canalia-north-day-color-palette
+      '((theme-name 'canalia-north-day)
         ;; BEGIN LIGHT
         (background "#ffffff")
         (bdb "#99ccff")
         (bdp "#dd99ff")
         (bdr "#ff99bb")
-        (black "#ffffff")
-        (bold "#000000")
+        (black "#e6eef6")
+        (bold "#091119")
         (bpb "#bbddff")
         (bpc "#bbeeee")
         (bpp "#eeccff")
         (bpr "#ffccdd")
         (bpv "#ccccff")
-        (brblack "#cccccc")
-        (brwhite "#000000")
-        (comment "#aaaaaa")
-        (cursor "#000000")
-        (cursorColor "#bbbbbb")
+        (brblack "#d5dde5")
+        (brwhite "#091119")
+        (comment "#a2aab2")
+        (cursor "#091119")
+        (cursorColor "#b3bbc3")
         (cursorText "#ffffff")
         (fdb "#336699")
         (fdc "#227777")
@@ -55,7 +57,7 @@
         (fdr "#aa4466")
         (fdv "#5555bb")
         (fdy "#668822")
-        (foreground "#333333")
+        (foreground "#2b333b")
         (fpb "#5588bb")
         (fpc "#449999")
         (fpg "#559977")
@@ -63,44 +65,44 @@
         (fpr "#cc6688")
         (fpv "#7777dd")
         (fpy "#88aa44")
-        (fringe "#eeeeee")
-        (header "#dddddd")
-        (inactive "#888888")
+        (fringe "#e6eef6")
+        (header "#e6eef6")
+        (inactive "#808890")
         (links "#5588bb")
-        (modeline "#cccccc")
-        (selectedText "#000000")
-        (selection "#dddddd")
-        (white "#888888")
+        (modeline "#c4ccd4")
+        (selectedText "#091119")
+        (selection "#e6eef6")
+        (white "#808890")
         ;; END LIGHT
         ))
 
-(setq canalia-dark-color-palette
-      '((theme-name 'canalia-dark)
+(setq canalia-north-night-color-palette
+      '((theme-name 'canalia-north-night)
         ;; BEGIN DARK
-        (background "#333333")
+        (background "#2b333b")
         (bdb "#5588bb")
         (bdp "#9955bb")
         (bdr "#bb5577")
-        (black "#000000")
-        (bold "#dddddd")
+        (black "#091119")
+        (bold "#d5dde5")
         (bpb "#446688")
         (bpc "#447777")
         (bpp "#775588")
         (bpr "#885566")
         (bpv "#555588")
-        (brblack "#666666")
-        (brwhite "#ffffff")
-        (comment "#777777")
+        (brblack "#4d555d")
+        (brwhite "#e6eef6")
+        (comment "#6f777f")
         (cursor "#ffffff")
-        (cursorColor "#777777")
-        (cursorText "#333333")
+        (cursorColor "#6f777f")
+        (cursorText "#2b333b")
         (fdb "#77aadd")
         (fdc "#66bbbb")
         (fdg "#77bb99")
         (fdr "#ee88aa")
         (fdv "#9999ff")
         (fdy "#aacc66")
-        (foreground "#aaaaaa")
+        (foreground "#b3bbc3")
         (fpb "#5588bb")
         (fpc "#449999")
         (fpg "#559977")
@@ -108,19 +110,19 @@
         (fpr "#cc6688")
         (fpv "#7777dd")
         (fpy "#88aa44")
-        (fringe "#444444")
-        (header "#555555")
-        (inactive "#888888")
+        (fringe "#3c444c")
+        (header "#4d555d")
+        (inactive "#808890")
         (links "#5588bb")
-        (modeline "#666666")
-        (selectedText "#dddddd")
-        (selection "#555555")
-        (white "#888888")
+        (modeline "#5e666e")
+        (selectedText "#d5dde5")
+        (selection "#4d555d")
+        (white "#808890")
         ;; END DARK
         ))
 
 (setq
- canalia-definition
+ canalia-north-definition
  '((custom-theme-set-faces
     theme-name
 
@@ -410,19 +412,19 @@
     `(markleft-comment-face        ((t (:inherit font-lock-comment-face))))
     )))
 
-(defmacro canalia-with-color-variables (theme-name color-palette)
+(defmacro canalia-north-with-color-variables (theme-name color-palette)
   (let ((color-palette* (eval color-palette)))
     `(let* ((theme-name ,theme-name)
             ,@(mapcar (lambda (elm) `(,(car elm) ,(cadr elm))) color-palette*))
-       ,@canalia-definition)))
+       ,@canalia-north-definition)))
 
-(deftheme canalia-light "canalia light theme")
-(canalia-with-color-variables 'canalia-light canalia-light-color-palette)
-(provide-theme 'canalia-light)
+(deftheme canalia-north-day "canalia north day theme")
+(canalia-north-with-color-variables 'canalia-north-day canalia-north-day-color-palette)
+(provide-theme 'canalia-north-day)
 
-(deftheme canalia-dark "canalia dark theme")
-(canalia-with-color-variables 'canalia-dark canalia-dark-color-palette)
-(provide-theme 'canalia-dark)
+(deftheme canalia-north-night "canalia north night theme")
+(canalia-north-with-color-variables 'canalia-north-night canalia-north-night-color-palette)
+(provide-theme 'canalia-north-night)
 
-(provide 'canalia-theme)
-;;; canalia-theme.el ends here
+(provide 'canalia-north-theme)
+;;; canalia-north-theme.el ends here
