@@ -72,7 +72,7 @@
         (modeline "#c4ccd4")
         (selectedText "#091119")
         (selection "#d5dde5")
-        (white "#808890")
+        (white "#a2aab2")
         ;; END LIGHT
         ))
 
@@ -117,7 +117,7 @@
         (modeline "#5e666e")
         (selectedText "#d5dde5")
         (selection "#4d555d")
-        (white "#808890")
+        (white "#6f777f")
         ;; END DARK
         ))
 

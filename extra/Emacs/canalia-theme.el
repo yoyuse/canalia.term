@@ -70,7 +70,7 @@
         (modeline "#cccccc")
         (selectedText "#111111")
         (selection "#dddddd")
-        (white "#888888")
+        (white "#aaaaaa")
         ;; END LIGHT
         ))
 
@@ -115,7 +115,7 @@
         (modeline "#666666")
         (selectedText "#dddddd")
         (selection "#555555")
-        (white "#888888")
+        (white "#777777")
         ;; END DARK
         ))
 
