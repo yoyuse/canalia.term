@@ -60,7 +60,7 @@
         (foreground "#2b333b")
         (fpb "#5588bb")
         (fpc "#44aaaa")
-        (fpg "#449977")
+        (fpg "#44aa77")
         (fpp "#aa66cc")
         (fpr "#cc6688")
         (fpv "#7777dd")
