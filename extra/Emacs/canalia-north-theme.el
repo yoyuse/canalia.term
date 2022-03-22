@@ -67,7 +67,6 @@
         (fpy "#88aa44")
         (fringe "#e6eef6")
         (header "#d5dde5")
-        (inactive "#808890")
         (links "#5588bb")
         (modeline "#c4ccd4")
         (selectedText "#091119")
@@ -112,7 +111,6 @@
         (fpy "#99aa77")
         (fringe "#3c444c")
         (header "#4d555d")
-        (inactive "#808890")
         (links "#7799bb")
         (modeline "#5e666e")
         (selectedText "#d5dde5")
@@ -168,7 +166,7 @@
     `(mode-line-buffer-id ((t (:weight bold))))
     `(mode-line-emphasis  ((t (:weight bold))))
     `(mode-line-highlight ((t :inherit highlight)))
-    `(mode-line-inactive  ((t (:weight light :box (:line-width -1 :color ,header :style nil) :foreground ,inactive :background ,fringe :inherit mode-line))))
+    `(mode-line-inactive  ((t (:weight light :box (:line-width -1 :color ,modeline :style nil) :foreground ,comment :background ,fringe :inherit mode-line))))
 
     `(next-error ((t (:inherit region))))
 
@@ -190,7 +188,7 @@
     `(compilation-mode-line-run  ((t (:foreground ,fpb))))
     `(compilation-warning        ((t (:foreground ,fpy))))
 
-    `(completions-common-part      ((t (:foreground ,inactive))))
+    `(completions-common-part      ((t (:foreground ,comment))))
     `(completions-first-difference ((t (:foreground ,fpp :weight bold))))
 
     `(cperl-array-face          ((t (:underline t :inherit font-lock-variable-name-face))))
@@ -334,7 +332,7 @@
     `(popup-face                       ((t (:background ,header))))
     `(popup-menu-mouse-face            ((t (:foreground ,bold :background ,bpp))))
     `(popup-menu-selection-face        ((t (:foreground ,bold :background ,bpv))))
-    `(popup-scroll-bar-background-face ((t (:background ,inactive))))
+    `(popup-scroll-bar-background-face ((t (:background ,comment))))
     `(popup-scroll-bar-foreground-face ((t (:background ,fpr))))
     `(popup-tip-face                   ((t (:inherit tooltip))))
 
