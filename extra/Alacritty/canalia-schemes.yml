@@ -1,0 +1,121 @@
+schemes:
+  canalia-light: &canalia-light
+    primary:
+      background: '#ffffff'
+      foreground: '#333333'
+      bright_foreground: '#111111'
+    # cursor:
+    #   text: '#ffffff'
+    #   cursor: '#bbbbbb'
+    selection:
+      text: '#111111'
+      background: '#dddddd'
+    normal:
+      black: '#eeeeee'
+      red: '#cc6688'
+      green: '#449977'
+      yellow: '#88aa44'
+      blue: '#5588bb'
+      magenta: '#7777dd'
+      cyan: '#44aaaa'
+      white: '#aaaaaa'
+    bright:
+      black: '#dddddd'
+      red: '#bb2255'
+      green: '#117744'
+      yellow: '#557711'
+      blue: '#1166bb'
+      magenta: '#4444cc'
+      cyan: '#117777'
+      white: '#111111'
+  canalia-dark: &canalia-dark
+    primary:
+      background: '#333333'
+      foreground: '#bbbbbb'
+      bright_foreground: '#dddddd'
+    # cursor:
+    #   text: '#333333'
+    #   cursor: '#777777'
+    selection:
+      text: '#dddddd'
+      background: '#555555'
+    normal:
+      black: '#111111'
+      red: '#cc99aa'
+      green: '#88aa99'
+      yellow: '#99aa77'
+      blue: '#7799bb'
+      magenta: '#9999dd'
+      cyan: '#77aaaa'
+      white: '#777777'
+    bright:
+      black: '#555555'
+      red: '#ee88aa'
+      green: '#66cc99'
+      yellow: '#aacc66'
+      blue: '#77aadd'
+      magenta: '#9999ff'
+      cyan: '#66cccc'
+      white: '#eeeeee'
+  canalia-north-day: &canalia-north-day
+    primary:
+      background: '#ffffff'
+      foreground: '#2b333b'
+      bright_foreground: '#091119'
+    # cursor:
+    #   text: '#ffffff'
+    #   cursor: '#b3bbc3'
+    selection:
+      text: '#091119'
+      background: '#d5dde5'
+    normal:
+      black: '#e6eef6'
+      red: '#cc6688'
+      green: '#44aa77'
+      yellow: '#88aa44'
+      blue: '#5588bb'
+      magenta: '#7777dd'
+      cyan: '#44aaaa'
+      white: '#a2aab2'
+    bright:
+      black: '#d5dde5'
+      red: '#bb2255'
+      green: '#117744'
+      yellow: '#557711'
+      blue: '#1166bb'
+      magenta: '#4444cc'
+      cyan: '#117777'
+      white: '#091119'
+  canalia-north-night: &canalia-north-night
+    primary:
+      background: '#2b333b'
+      foreground: '#b3bbc3'
+      bright_foreground: '#d5dde5'
+    # cursor:
+    #   text: '#2b333b'
+    #   cursor: '#6f777f'
+    selection:
+      text: '#d5dde5'
+      background: '#4d555d'
+    normal:
+      black: '#091119'
+      red: '#cc99aa'
+      green: '#88aa99'
+      yellow: '#99aa77'
+      blue: '#7799bb'
+      magenta: '#9999dd'
+      cyan: '#77aaaa'
+      white: '#6f777f'
+    bright:
+      black: '#4d555d'
+      red: '#ee88aa'
+      green: '#66cc99'
+      yellow: '#aacc66'
+      blue: '#77aadd'
+      magenta: '#9999ff'
+      cyan: '#66cccc'
+      white: '#e6eef6'
+colors: *canalia-light
+# colors: *canalia-dark
+# colors: *canalia-north-day
+# colors: *canalia-north-night
