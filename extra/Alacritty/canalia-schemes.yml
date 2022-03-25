@@ -115,7 +115,7 @@ schemes:
       magenta: '#9999ff'
       cyan: '#66cccc'
       white: '#e6eef6'
-colors: *canalia-light
+# colors: *canalia-light
 # colors: *canalia-dark
 # colors: *canalia-north-day
 # colors: *canalia-north-night
