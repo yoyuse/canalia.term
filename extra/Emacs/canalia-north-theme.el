@@ -20,11 +20,6 @@
 
 ;;; Commentary:
 
-;; 2021-04-28 canalia-north-theme.el from ngf-theme.el
-;; 2021-04-21 ngf-theme.el from canalia-theme.el
-;; 2021-04-15 canalia-theme.el from canalia-f-theme.el
-;; 2021-04-04
-
 ;;; Code:
 
 (defvar canalia-north-day-color-palette nil)

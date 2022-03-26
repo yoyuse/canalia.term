@@ -20,9 +20,6 @@
 
 ;;; Commentary:
 
-;; 2021-04-15 canalia-theme.el from canalia-f-theme.el
-;; 2021-04-04
-
 ;;; Code:
 
 (defvar canalia-light-color-palette nil)
