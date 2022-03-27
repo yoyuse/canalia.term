@@ -6,16 +6,15 @@ In your shell:
 
 ``` shellsession
 mkdir ~/.emacs.d/themes
+cp canalia-theme.el canalia-north-theme.el ~/.emacs.d/themes/
 cd ~/.emacs.d/themes
-cp path/to/canalia-theme.el .
 ln -s canalia-theme.el canalia-dark-theme.el
 ln -s canalia-theme.el canalia-light-theme.el
-cp path/to/canalia-north-theme.el .
 ln -s canalia-north-theme.el canalia-north-night-theme.el
 ln -s canalia-north-theme.el canalia-north-day-theme.el
 ```
 
-Add to your `~/.emacs.d/init.el`:
+Add to your `~/.emacs.d/init.el`, for example:
 
 ``` emacs-lisp
 (setq custom-theme-directory (locate-user-emacs-file "themes"))
@@ -27,4 +26,4 @@ Add to your `~/.emacs.d/init.el`:
 
 ## License
 
-GNU GPL 3
+MIT
