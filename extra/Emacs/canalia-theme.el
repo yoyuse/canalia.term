@@ -139,7 +139,7 @@
     `(variable-pitch    ((t nil)))
     `(escape-glyph ((t (:foreground ,fpv))))
     `(homoglyph    ((t (:foreground ,fpv))))
-    `(hl-line      ((t (:background ,header))))
+    `(hl-line      ((t (:background ,fringe))))
     `(icomplete-first-match ((t (:foreground ,bold :weight bold))))
 
     `(isearch        ((t (:background ,bpv :distant-foreground ,foreground))))
