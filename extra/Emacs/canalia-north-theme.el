@@ -315,6 +315,7 @@
     `(page-break-lines ((t (:foreground ,fpb))))
 
     `(popup-face                       ((t (:background ,header))))
+    `(popup-isearch-match              ((t (:background ,bdb))))
     `(popup-menu-mouse-face            ((t (:foreground ,bold :background ,bpp))))
     `(popup-menu-selection-face        ((t (:foreground ,bold :background ,bpv))))
     `(popup-scroll-bar-background-face ((t (:background ,comment))))
