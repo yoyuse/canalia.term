@@ -322,6 +322,13 @@
     `(popup-scroll-bar-foreground-face ((t (:background ,fpr))))
     `(popup-tip-face                   ((t (:inherit tooltip))))
 
+    `(powerline-active0 ((t (:foreground ,fringe :background ,fpb))))
+    `(powerline-active1 ((t (:foreground ,foreground :background ,modeline))))
+    `(powerline-active2 ((t (:foreground ,comment :background ,fringe))))
+    `(powerline-inactive0 ((t (:foreground ,comment :background ,fringe))))
+    `(powerline-inactive1 ((t (:foreground ,comment :background ,fringe))))
+    `(powerline-inactive2 ((t (:foreground ,comment :background ,fringe))))
+
     `(query-replace ((t (:inherit isearch))))
 
     `(rg-match-position-face ((t (:inherit rg-file-tag-face))))
