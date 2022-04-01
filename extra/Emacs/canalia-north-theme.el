@@ -315,11 +315,19 @@
     `(page-break-lines ((t (:foreground ,fpb))))
 
     `(popup-face                       ((t (:background ,header))))
+    `(popup-isearch-match              ((t (:background ,bdb))))
     `(popup-menu-mouse-face            ((t (:foreground ,bold :background ,bpp))))
     `(popup-menu-selection-face        ((t (:foreground ,bold :background ,bpv))))
     `(popup-scroll-bar-background-face ((t (:background ,comment))))
     `(popup-scroll-bar-foreground-face ((t (:background ,fpr))))
     `(popup-tip-face                   ((t (:inherit tooltip))))
+
+    `(powerline-active0 ((t (:foreground ,fringe :background ,fpb))))
+    `(powerline-active1 ((t (:foreground ,foreground :background ,modeline))))
+    `(powerline-active2 ((t (:foreground ,comment :background ,fringe))))
+    `(powerline-inactive0 ((t (:foreground ,comment :background ,fringe))))
+    `(powerline-inactive1 ((t (:foreground ,comment :background ,fringe))))
+    `(powerline-inactive2 ((t (:foreground ,comment :background ,fringe))))
 
     `(query-replace ((t (:inherit isearch))))
 
