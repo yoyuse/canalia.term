@@ -1,6 +1,6 @@
 ;;; canalia-theme.el --- canalia theme for Emacs
 
-;; Copyright (C) 2021, 2022  YUSE Yosihiro
+;; Copyright (C) 2021-2023  YUSE Yosihiro
 
 ;; Author: YUSE Yosihiro <yoyuse@gmail.com>
 ;; Keywords: local
@@ -359,6 +359,10 @@
     `(web-mode-html-attr-value-face  ((t (:foreground ,fpv))))
     `(web-mode-html-tag-bracket-face ((t (:foreground ,fpg))))
     `(web-mode-html-tag-face         ((t (:foreground ,fpb))))
+
+    `(which-func ((t (:inherit font-lock-function-name-face))))
+
+    `(which-key-separator-face ((t (:italic nil :inherit font-lock-comment-face))))
 
     `(whitespace-big-indent       ((t (:background ,header))))
     `(whitespace-empty            ((t (:background ,header))))
