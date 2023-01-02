@@ -257,10 +257,10 @@
     `(git-gutter+-deleted  ((t (:foreground ,bpr :background ,bpr))))
     `(git-gutter+-modified ((t (:foreground ,bpp :background ,bpp))))
 
-    `(ido-first-match ((t (:foreground ,fpp))))
+    `(ido-first-match ((t (:foreground ,fpc))))
     `(ido-only-match  ((t (:foreground ,fpg))))
     `(ido-subdir      ((t (:foreground ,fpb))))
-    `(ido-virtual     ((t (:foreground ,fpb :italic slant))))
+    `(ido-virtual     ((t (:foreground ,fpp :italic slant))))
 
     `(info-menu-star ((t (:foreground ,fpr))))
     `(info-node      ((t (:foreground ,fpg :slant italic :weight bold))))
